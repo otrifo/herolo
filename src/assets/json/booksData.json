@@ -1,0 +1,34 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "author": "colson whitehead",
+      "date": "8/2/2016",
+      "title": "the underground railroad"
+    },
+    {
+      "id": 2,
+      "author": "paul kalanithi",
+      "date": "1/12/2016",
+      "title": "when breath becomes air"
+    },
+    {
+      "id": 3,
+      "author": "j. d. vance",
+      "date": "6/28/2016",
+      "title": "hillbilly elegy"
+    },
+    {
+      "id": 4,
+      "author": "swing time",
+      "date": "11/15/2016",
+      "title": "zadie smith"
+    },
+    {
+      "id": 5,
+      "author": "yaa gyasi",
+      "date": "6/7/2016",
+      "title": "homegoing"
+    }
+  ]
+}

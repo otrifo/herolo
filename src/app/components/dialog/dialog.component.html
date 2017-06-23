@@ -1,0 +1,36 @@
+<div class="dialog" *ngIf="type !== 'delete'">
+  <h2 md-dialog-title>{{type}} {{bookName}}</h2>
+  <form (ngSubmit)="saveValues(bookValues)" #BookForm="ngForm">
+    <md-dialog-content>
+      <md-input-container>
+        <input mdInput type="text" placeholder="Book name" [(ngModel)]="bookValues.title" name="title"
+               required/>
+        <md-error>This field is required</md-error>
+      </md-input-container>
+      <md-input-container>
+        <input mdInput type="text" placeholder="Author" [(ngModel)]="bookValues.author" name="author" required>
+        <md-error>This field is required</md-error>
+      </md-input-container>
+      <md-input-container>
+        <input mdInput [(ngModel)]="bookValues.date" [mdDatepicker]="picker" placeholder="Choose a date" name="date"
+               required>
+        <button mdSuffix [mdDatepickerToggle]="picker"></button>
+        <md-error>This field is required</md-error>
+      </md-input-container>
+      <md-datepicker #picker></md-datepicker>
+      <div class="has-title" *ngIf="hasTitleName">Book name already exists</div>
+    </md-dialog-content>
+    <md-dialog-actions>
+      <button md-button md-dialog-close="cancel" class="cancel-btn">Cancel</button>
+      <button md-button type="submit" class="save-btn" [disabled]="!BookForm.form.valid">Save</button>
+    </md-dialog-actions>
+  </form>
+</div>
+<div class="dialog" *ngIf="type === 'delete'">
+  <md-dialog-content>
+    <span class="delete-msg">Are you sure you want to delete {{bookName}} ?</span>
+  </md-dialog-content>
+  <md-dialog-actions>
+    <button md-button md-dialog-close="delete" class="delete-btn">delete</button>
+  </md-dialog-actions>
+</div>

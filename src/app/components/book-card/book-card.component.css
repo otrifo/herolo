@@ -1,0 +1,58 @@
+.edit {
+  float: right;
+  height: 30px;
+  width: 30px;
+}
+
+.delete {
+  float: left;
+  height: 30px;
+  width: 30px;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.edit-img {
+  margin-left: 3px;
+}
+
+.delete-img {
+  margin-top: 5px;
+}
+
+.book-card {
+  margin: 18px;
+  padding: 14px;
+  width: 220px;
+  height: 150px;
+}
+
+.details {
+  margin: 5px;
+  text-align: center;
+}
+
+.book-img {
+  height: 60px;
+  margin: 0 50px 10px;
+}
+
+.title {
+  font-size: 16px;
+  height: 20px;
+}
+
+.author, .date {
+  font-size: 13px;
+}
+
+.text{
+  margin-bottom: 10px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}

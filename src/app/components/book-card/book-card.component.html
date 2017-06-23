@@ -1,0 +1,13 @@
+<md-card class="book-card">
+  <button md-mini-fab class="delete" (click)="deleteBook(book,index)" color="warn"><img
+    src="../assets/images/delete.svg"
+    class="delete-img"></button>
+  <img src="../assets/images/book-img.svg" class="book-img">
+  <button md-mini-fab class="edit" (click)="editBook(book,index)" color="warn"><img src="../assets/images/edit.svg"
+                                                                                    class="edit-img"></button>
+  <md-card-content class="details">
+    <div class="text title" title="{{book.title | capitalize}}">{{book.title | capitalize}}</div>
+    <div class="text author" title="{{book.author | capitalize}}">Author : {{book.author| capitalize}}</div>
+    <div class="text date" title="{{book.date | date}}">Publish Date : {{book.date | date}}</div>
+  </md-card-content>
+</md-card>
