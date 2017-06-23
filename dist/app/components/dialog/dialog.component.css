@@ -1,0 +1,25 @@
+.mat-input-container {
+  margin-bottom: 6px;
+}
+
+.has-title {
+  color: #ea0000;
+}
+
+.mat-button {
+  margin-left: auto;
+}
+
+.save-btn {
+  color: #0000bf;
+}
+
+.cancel-btn, .delete-btn {
+  color: #c10000;
+}
+
+.delete-msg{
+  font-size: 18px;
+}
+
+

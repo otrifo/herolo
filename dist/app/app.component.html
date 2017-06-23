@@ -1,0 +1,11 @@
+<div class="books-store">
+  <md-toolbar color="primary">
+    <span>Oshri Books Store</span>
+    <span class="tool-bar-spacer"></span>
+    <button md-button class="add-btn" (click)="addBook()">Add Book</button>
+  </md-toolbar>
+  <div class="books-layout">
+    <app-book-card *ngFor="let book of booksList;let i = index" [book]="book" [index]="i"></app-book-card>
+  </div>
+</div>
+

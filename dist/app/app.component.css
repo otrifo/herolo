@@ -1,0 +1,23 @@
+.add-btn {
+  color: white;
+}
+
+.add-img {
+  margin-right: 1px;
+  margin-top: 8px;
+}
+
+.books-layout {
+  margin: 0 auto;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.mat-toolbar {
+  background-color: #603013;
+}
+
+.tool-bar-spacer {
+  flex: 1 1 auto;
+}
+
